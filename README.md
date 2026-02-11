@@ -1,1 +1,1 @@
-Eu usei Html e Css para criar do 0 essa replica do youtube (fan service)
+Clone da interface do YouTube desenvolvido para praticar CSS Grid e Flexbox
