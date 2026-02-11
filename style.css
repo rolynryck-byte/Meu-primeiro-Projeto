@@ -1,6 +1,8 @@
 * {
   box-sizing: border-box;
 
+  font-family: "Roboto", Arial, sans-serif;
+
   margin: 0;
 
   padding: 0;
@@ -339,14 +341,9 @@
 
 .caixa-login {
   font-family: "Roboto", Arial, sans-serif;
-  gap: 8px;
   text-decoration: none;
   display: flex;
   align-items: center;
-  border: 0.5px solid #0f0f0f0a;
-  border-radius: 500px;
-  width: 190px;
-  margin-left: 25px;
 }
 
 .download,
@@ -363,11 +360,25 @@
 }
 
 .caixa-login {
-  gap: 15px;
+  gap: 20px;
 }
 
 .perfil {
   border-color: #0f0f0f;
   border-radius: 50%;
   width: 32px;
+}
+
+/* 1. ESTADO NORMAL: A transição PRECISA estar aqui */
+.Thumb {
+  width: 100%;
+  border-radius: 12px;
+
+  /* Esse é o segredo! O tempo deve ficar na classe base */
+  transition: transform 0.3s ease;
+}
+
+/* 2. ESTADO COM O MOUSE EM CIMA */
+.Thumb:hover {
+  transform: scale(1.05);
 }
