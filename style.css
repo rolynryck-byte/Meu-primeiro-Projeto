@@ -382,3 +382,18 @@
 .Thumb:hover {
   transform: scale(1.05);
 }
+@media (max-width: 768px) {
+  .main-content {
+    flex-direction: column; /* Transforma o layout em uma pilha vertical */
+    text-align: center; /* Centraliza os textos para combinar */
+  }
+
+  .lista-atributos {
+    width: 90%; /* Faz a lista ocupar quase a largura toda do celular */
+  }
+
+  .barra-hp,
+  .barra-mp {
+    width: 80%; /* Encurta as barras para caberem na tela em pé */
+  }
+}
